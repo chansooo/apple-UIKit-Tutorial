@@ -10,6 +10,8 @@
 		F024C39728ABD55F0098B9FF /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C39628ABD55F0098B9FF /* Date+Today.swift */; };
 		F024C39A28ABD7800098B9FF /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C39928ABD77F0098B9FF /* ReminderListViewController+DataSource.swift */; };
 		F024C39C28ABE37E0098B9FF /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C39B28ABE37E0098B9FF /* UIColor+Today.swift */; };
+		F024C39E28ABE9670098B9FF /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C39D28ABE9670098B9FF /* ReminderDoneButton.swift */; };
+		F024C3A028ABE9CB0098B9FF /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C39F28ABE9CB0098B9FF /* ReminderListViewController+Actions.swift */; };
 		F06A4B1428ABB69600D42BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A4B1328ABB69600D42BDE /* AppDelegate.swift */; };
 		F06A4B1628ABB69600D42BDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */; };
 		F06A4B1B28ABB69600D42BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06A4B1928ABB69600D42BDE /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		F024C39628ABD55F0098B9FF /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		F024C39928ABD77F0098B9FF /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
 		F024C39B28ABE37E0098B9FF /* UIColor+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
+		F024C39D28ABE9670098B9FF /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
+		F024C39F28ABE9CB0098B9FF /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
 		F06A4B1028ABB69600D42BDE /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06A4B1328ABB69600D42BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 			children = (
 				F06A4B2728ABBB0400D42BDE /* ReminderListViewController.swift */,
 				F024C39928ABD77F0098B9FF /* ReminderListViewController+DataSource.swift */,
+				F024C39F28ABE9CB0098B9FF /* ReminderListViewController+Actions.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 				F06A4B1C28ABB69A00D42BDE /* Assets.xcassets */,
 				F06A4B1E28ABB69A00D42BDE /* LaunchScreen.storyboard */,
 				F06A4B2128ABB69A00D42BDE /* Info.plist */,
+				F024C39D28ABE9670098B9FF /* ReminderDoneButton.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -167,8 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F024C39C28ABE37E0098B9FF /* UIColor+Today.swift in Sources */,
+				F024C3A028ABE9CB0098B9FF /* ReminderListViewController+Actions.swift in Sources */,
 				F06A4B2828ABBB0400D42BDE /* ReminderListViewController.swift in Sources */,
 				F024C39728ABD55F0098B9FF /* Date+Today.swift in Sources */,
+				F024C39E28ABE9670098B9FF /* ReminderDoneButton.swift in Sources */,
 				F06A4B1428ABB69600D42BDE /* AppDelegate.swift in Sources */,
 				F06A4B1628ABB69600D42BDE /* SceneDelegate.swift in Sources */,
 				F06A4B2B28ABBD6B00D42BDE /* Reminder.swift in Sources */,
