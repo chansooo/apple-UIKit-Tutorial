@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F024C39828ABD70D0098B9FF /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F06A4B2728ABBB0400D42BDE /* ReminderListViewController.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
 		F06A4B0728ABB69600D42BDE = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +68,7 @@
 		F06A4B1228ABB69600D42BDE /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				F024C39828ABD70D0098B9FF /* ListViewController */,
 				F06A4B2928ABBD5200D42BDE /* Models */,
 				F06A4B1328ABB69600D42BDE /* AppDelegate.swift */,
 				F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */,
@@ -67,7 +76,6 @@
 				F06A4B1C28ABB69A00D42BDE /* Assets.xcassets */,
 				F06A4B1E28ABB69A00D42BDE /* LaunchScreen.storyboard */,
 				F06A4B2128ABB69A00D42BDE /* Info.plist */,
-				F06A4B2728ABBB0400D42BDE /* ReminderListViewController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
