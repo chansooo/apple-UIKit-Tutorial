@@ -16,6 +16,7 @@
 		4F9CC9C328AB7E4000DBF003 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9CC9C228AB7E4000DBF003 /* Reminder.swift */; };
 		4F9CC9C628AB954400DBF003 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9CC9C528AB954400DBF003 /* Date+Today.swift */; };
 		4F9CC9C828AB984200DBF003 /* ReminderCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9CC9C728AB984200DBF003 /* ReminderCollectionViewController+DataSource.swift */; };
+		4FBE636228ABCCEB00897C74 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE636128ABCCEB00897C74 /* UIColor+Today.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4F9CC9C228AB7E4000DBF003 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		4F9CC9C528AB954400DBF003 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		4F9CC9C728AB984200DBF003 /* ReminderCollectionViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderCollectionViewController+DataSource.swift"; sourceTree = "<group>"; };
+		4FBE636128ABCCEB00897C74 /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4F9CC9C528AB954400DBF003 /* Date+Today.swift */,
+				4FBE636128ABCCEB00897C74 /* UIColor+Today.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBE636228ABCCEB00897C74 /* UIColor+Today.swift in Sources */,
 				4F9CC9AF28AB7BDC00DBF003 /* ReminderCollectionViewController.swift in Sources */,
 				4F9CC9C828AB984200DBF003 /* ReminderCollectionViewController+DataSource.swift in Sources */,
 				4F9CC9C628AB954400DBF003 /* Date+Today.swift in Sources */,
