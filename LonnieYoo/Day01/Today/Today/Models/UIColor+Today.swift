@@ -11,4 +11,8 @@ extension UIColor {
     static var todayListCellBackground: UIColor {
         UIColor(named: "TodayListCellBackground") ?? .secondarySystemBackground
     }
+    
+    static var todayListCellDoneButtonTint: UIColor {
+        UIColor(named: "TodayListCellDoneButtonTint") ?? .tintColor
+    }
 }
