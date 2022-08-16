@@ -15,4 +15,8 @@ extension UIColor {
     static var todayListCellDoneButtonTint: UIColor {
         UIColor(named: "TodayListCellDoneButtonTint") ?? .tintColor
     }
+    
+    static var todayPrimaryTint: UIColor {
+        UIColor(named: "TodayPrimaryTint") ?? .tintColor
+    }
 }
