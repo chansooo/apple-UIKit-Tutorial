@@ -19,4 +19,8 @@ extension UIColor {
     static var todayPrimaryTint: UIColor {
         UIColor(named: "TodayPrimaryTint") ?? .tintColor
     }
+    
+    static var todayNavigationBackground: UIColor {
+        UIColor(named: "TodayNavigationBackground") ?? .secondarySystemBackground
+    }
 }
