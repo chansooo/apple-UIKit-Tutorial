@@ -56,6 +56,7 @@
 		F024C39828ABD70D0098B9FF /* ListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F024C39D28ABE9670098B9FF /* ReminderDoneButton.swift */,
 				F06A4B2728ABBB0400D42BDE /* ReminderListViewController.swift */,
 				F024C39928ABD77F0098B9FF /* ReminderListViewController+DataSource.swift */,
 				F024C39F28ABE9CB0098B9FF /* ReminderListViewController+Actions.swift */,
@@ -107,7 +108,6 @@
 		F06A4B2928ABBD5200D42BDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F024C39D28ABE9670098B9FF /* ReminderDoneButton.swift */,
 				F06A4B2A28ABBD6B00D42BDE /* Reminder.swift */,
 				F024C39628ABD55F0098B9FF /* Date+Today.swift */,
 				F024C39B28ABE37E0098B9FF /* UIColor+Today.swift */,

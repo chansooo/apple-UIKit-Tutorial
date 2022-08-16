@@ -21,8 +21,6 @@ class ReminderViewController: UICollectionViewController {
         listConfiguration.showsSeparators = false
         let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
         super.init(collectionViewLayout: listLayout)
-        
-        updateSnapshot()
     }
     
     required init?(coder: NSCoder) {
@@ -35,6 +33,8 @@ class ReminderViewController: UICollectionViewController {
         dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: Row) in
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
+        
+        updateSnapshot()
     }
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
