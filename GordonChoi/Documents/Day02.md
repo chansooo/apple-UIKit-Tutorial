@@ -1,4 +1,5 @@
 금일 진행내용
+- UIKit Tutorial 중 Displaying Reminder Details까지 진행
 
 학습 키워드
 - Identifiable
