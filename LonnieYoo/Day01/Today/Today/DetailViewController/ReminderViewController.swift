@@ -19,10 +19,10 @@ class ReminderViewController: UICollectionViewController {
     
     var workingReminder: Reminder
     var isAddingNewReminder = false
-    var onChange: (Reminder)->Void
+    var onChange: (Reminder) -> Void
     private var dataSource: DataSource!
     
-    init(reminder: Reminder, onChange: @escaping (Reminder)->Void) {
+    init(reminder: Reminder, onChange: @escaping (Reminder) -> Void) {
         self.reminder = reminder
         self.workingReminder = reminder
         self.onChange = onChange
