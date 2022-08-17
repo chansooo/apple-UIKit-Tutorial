@@ -32,10 +32,7 @@ final class ReminderCollectionViewController: UICollectionViewController {
             )
         }
         
-        var snapshot = Snapshot()
-        snapshot.appendSections([0])
-        snapshot.appendItems(reminders.map { $0.id })
-        dataSource.apply(snapshot)
+        updateSnapshot()
         
         collectionView.dataSource = dataSource
     }
