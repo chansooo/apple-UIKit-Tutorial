@@ -26,8 +26,6 @@ class ReminderListViewController: UICollectionViewController {
         
         updateSnapShot()
         
-        dataSource.apply(snapShot)
-        
         collectionView.dataSource = dataSource
     }
 
