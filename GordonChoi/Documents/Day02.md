@@ -6,3 +6,7 @@
 - 캡처 리스트
 - 접근성 (accessibility)
 - Diffable data source / snapshot / hashable의 관계
+
+앞으로 할 일
+- 적절한 은닉화
+- 로컬라이징
