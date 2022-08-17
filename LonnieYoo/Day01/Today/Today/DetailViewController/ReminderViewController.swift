@@ -56,15 +56,9 @@ class ReminderViewController: UICollectionViewController {
         
         switch (section, row) {
         case (_, .header(let title)):
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = title
-            cell.contentConfiguration = contentConfiguration
+            cell.contentConfiguration = headerConfiguration(for: cell, with: title)
         case (.view, _):
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = text(for: row)
-            contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
-            contentConfiguration.image = row.image
-            cell.contentConfiguration = contentConfiguration
+            cell.contentConfiguration = defaultConfiguration(for: cell, at: row)
         default:
             fatalError("Unexpected combination of section and row.")
         }
@@ -94,20 +88,5 @@ class ReminderViewController: UICollectionViewController {
             fatalError("Unable to find matching section")
         }
         return section
-    }
-    
-    func text(for row: Row) -> String? {
-        switch row {
-        case .viewDate:
-            return reminder.dueDate.dayText
-        case .viewNotes:
-            return reminder.notes
-        case .viewTime:
-            return reminder.dueDate.formatted(date: .omitted, time: .shortened)
-        case .viewTitle:
-            return reminder.title
-        default:
-            return nil
-        }
     }
 }
