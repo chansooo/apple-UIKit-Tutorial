@@ -35,8 +35,10 @@ extension ReminderViewController {
         
         var textStyle: UIFont.TextStyle {
             switch self {
-            case .viewTitle: return .headline
-            default: return .subheadline
+            case .viewTitle:
+                return .headline
+            default:
+                return .subheadline
             }
         }
     }

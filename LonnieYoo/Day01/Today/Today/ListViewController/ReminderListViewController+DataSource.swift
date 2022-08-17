@@ -12,11 +12,11 @@ extension ReminderListViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Reminder.ID>
     
     var reminderCompletedValue: String {
-            NSLocalizedString("Completed", comment: "Reminder completed value")
-        }
-        var reminderNotCompletedValue: String {
-            NSLocalizedString("Not completed", comment: "Reminder not completed value")
-        }
+        NSLocalizedString("Completed", comment: "Reminder completed value")
+    }
+    var reminderNotCompletedValue: String {
+        NSLocalizedString("Not completed", comment: "Reminder not completed value")
+    }
     
     func updateSnapshot(reloading ids: [Reminder.ID] = []) {
         var snapshot = Snapshot()
