@@ -21,7 +21,7 @@ extension Date {
         }
     }
     
-    var datText: String {
+    var dayText: String {
         if Locale.current.calendar.isDateInToday(self){
             return NSLocalizedString("Today", comment: "Todat due date description")
         }
