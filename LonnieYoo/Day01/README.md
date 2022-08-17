@@ -14,8 +14,8 @@
 * Editing Reminders ✅
 
 ### Chapter 4 - Adding, Deleting, and Filtering Reminders
-* Adding and Deleting Reminders 
-* Filtering Reminders
+* Adding and Deleting Reminders ✅
+* Filtering Reminders ✅
 
 ## Day03 체크리스트
 ### Chapter 5 - Custom Views and Animation
