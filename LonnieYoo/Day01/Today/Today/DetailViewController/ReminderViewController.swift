@@ -11,6 +11,7 @@ class ReminderViewController: UICollectionViewController {
     private typealias DataSource = UICollectionViewDiffableDataSource<Section, Row>
     private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Row>
     
+    // 상세 보기할 데이터
     var reminder: Reminder {
         didSet {
             onChange(reminder)
@@ -26,6 +27,8 @@ class ReminderViewController: UICollectionViewController {
         self.reminder = reminder
         self.workingReminder = reminder
         self.onChange = onChange
+        
+        // detailView에서 사용할 CollectionView layout 설정
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         listConfiguration.showsSeparators = false
         listConfiguration.headerMode = .firstItemInSection
@@ -40,6 +43,8 @@ class ReminderViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
+        
+        // DataSource에 Cell 추가
         dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: Row) in
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
@@ -64,6 +69,7 @@ class ReminderViewController: UICollectionViewController {
         }
     }
     
+    /// DetailView에 추가할 Cell을 생성하는 함수
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
         let section = section(for: indexPath)
         

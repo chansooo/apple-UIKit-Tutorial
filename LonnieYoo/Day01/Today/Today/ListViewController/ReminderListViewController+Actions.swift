@@ -12,6 +12,7 @@ extension ReminderListViewController {
         reminderStoreChanged()
     }
     
+    /// 미리알림 버튼이 선택 될때 호출되는 함수
     @objc func didPressDoneButton(_ sender: ReminderDoneButton) {
         guard let id = sender.id else { return }
         completeReminder(with: id)
