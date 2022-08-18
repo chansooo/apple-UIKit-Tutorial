@@ -20,7 +20,7 @@
 ## Day03 체크리스트
 ### Chapter 5 - Custom Views and Animation
 * Creating a Progress View ✅
-* Creating a Gradient Background
+* Creating a Gradient Background ✅
 
 ### Chapter 6 - System Frameworks
 * Loading Reminders
