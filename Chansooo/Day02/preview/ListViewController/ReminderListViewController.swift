@@ -66,6 +66,11 @@ class ReminderListViewController: UICollectionViewController {
         return false
     }
     
+    override func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
+        guard elementKind == ProgressHeaderView.elementKind, let progressView = view as? ProgressHeaderView else { return }
+        progressView.progress = progress
+    }
+    
     func showDetail(for id: Reminder.ID){
         let reminder = reminder(for: id)
         let viewController = ReminderViewController(reminder: reminder){ [weak self] reminder in
