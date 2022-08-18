@@ -52,7 +52,7 @@ class ReminderViewController: UICollectionViewController {
         let section = section(for: indexPath)
         switch (section, row) {
         case (_, .header(let title)):
-            cell.contentConfiguration = headerConfiguration(for: cell, with: row)
+            cell.contentConfiguration = headerConfiguration(for: cell, with: title)
         case (.view, _):
             cell.contentConfiguration = defaultConfiguration(for: cell, at: row)
         default:
@@ -86,18 +86,5 @@ class ReminderViewController: UICollectionViewController {
         return section
     }
     
-    func text(for row: Row) -> String? {
-        switch row {
-        case .viewDate:
-            return reminder.dueDate.dayText
-        case .viewNotes:
-            return reminder.notes
-        case .viewTime:
-            return reminder.dueDate.formatted(date: .omitted, time: .shortened)
-        case .viewTitle:
-            return reminder.title
-        default:
-            return nil
-        }
-    }
+
 }
