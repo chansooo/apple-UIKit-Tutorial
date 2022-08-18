@@ -25,5 +25,6 @@
 - UIKit Tutorial chapter 5
 - UIKit Tutorial chapter 6
 
-- UIKit Tutorial chapter 3
+✅ UIKit Tutorial chapter 3
+
 - UIKit Tutorial chapter 4
