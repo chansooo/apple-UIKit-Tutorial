@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F8DC9A928ADF58B00816315 /* ReminderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC9A828ADF58B00816315 /* ReminderViewController+Section.swift */; };
 		4F986C7B28AD3FD500781636 /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F986C7A28AD3FD500781636 /* ReminderDoneButton.swift */; };
 		4F986C7D28AD415000781636 /* ReminderCollectionViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F986C7C28AD415000781636 /* ReminderCollectionViewController+Actions.swift */; };
 		4F986C7F28AD518800781636 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F986C7E28AD518800781636 /* ReminderViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F8DC9A828ADF58B00816315 /* ReminderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Section.swift"; sourceTree = "<group>"; };
 		4F986C7A28AD3FD500781636 /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
 		4F986C7C28AD415000781636 /* ReminderCollectionViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderCollectionViewController+Actions.swift"; sourceTree = "<group>"; };
 		4F986C7E28AD518800781636 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				4F986C7E28AD518800781636 /* ReminderViewController.swift */,
 				4F986C8228AD52E600781636 /* ReminderViewController+Row.swift */,
+				4F8DC9A828ADF58B00816315 /* ReminderViewController+Section.swift */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8DC9A928ADF58B00816315 /* ReminderViewController+Section.swift in Sources */,
 				4FBE636228ABCCEB00897C74 /* UIColor+Today.swift in Sources */,
 				4F9CC9AF28AB7BDC00DBF003 /* ReminderCollectionViewController.swift in Sources */,
 				4F986C7F28AD518800781636 /* ReminderViewController.swift in Sources */,
