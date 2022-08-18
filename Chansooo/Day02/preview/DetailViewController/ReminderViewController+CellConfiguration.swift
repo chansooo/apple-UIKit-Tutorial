@@ -15,4 +15,10 @@ extension ReminderViewController {
         contentConfiguration.image = row.image
         return contentConfiguration
     }
+    
+    func headerConfiguration(for cell: UICollectionViewListCell, with title: String) -> UIListContentConfiguration {
+        var contentConfiguration = cell.defaultContentConfiguration()
+        contentConfiguration.text = title
+        return contentConfiguration
+    }
 }
