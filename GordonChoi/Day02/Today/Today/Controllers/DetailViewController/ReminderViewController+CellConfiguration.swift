@@ -29,7 +29,6 @@ extension ReminderViewController {
         return contentConfiguration
     }
     
-    
     func text(for row: Row) -> String? {
         switch row {
         case .viewDate:
