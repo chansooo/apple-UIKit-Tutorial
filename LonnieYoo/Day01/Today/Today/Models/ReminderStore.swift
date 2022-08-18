@@ -61,6 +61,14 @@ class ReminderStore {
         return reminders
     }
     
+    func remove(with id: Reminder.ID) throws {
+        guard isAvailable else {
+            throw TodayError.accessDenied
+        }
+        let ekReminder = try read(with: id)
+        try ekStore.remove(ekReminder, commit: true)
+    }
+    
     @discardableResult
     func save(_ reminder: Reminder) throws -> Reminder.ID {
         guard isAvailable else {
