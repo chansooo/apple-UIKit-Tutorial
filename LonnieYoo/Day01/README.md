@@ -23,5 +23,5 @@
 * Creating a Gradient Background ✅
 
 ### Chapter 6 - System Frameworks
-* Loading Reminders
+* Loading Reminders ✅
 * Saving Reminders
