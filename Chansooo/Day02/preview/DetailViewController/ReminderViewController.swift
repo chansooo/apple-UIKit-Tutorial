@@ -56,12 +56,7 @@ class ReminderViewController: UICollectionViewController {
             contentConfiguration.text = title
             cell.contentConfiguration = contentConfiguration
         case (.view, _):
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = text(for: row)
-            contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
-            contentConfiguration.image = row.image
-            cell.contentConfiguration = contentConfiguration
-            
+            cell.contentConfiguration = defaultConfiguration(for: cell, at: row)
         default:
             fatalError("Unexpected combination of section and row")
         }
