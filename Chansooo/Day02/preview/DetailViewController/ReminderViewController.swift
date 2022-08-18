@@ -78,6 +78,12 @@ class ReminderViewController: UICollectionViewController {
         dataSource.apply(snapshot)
     }
     
+    func titleConfiguration(for cell: UICollectionViewListCell, with title: String?) -> TextFieldContentView.Configuration {
+        var contentConfiguration = cell.textFieldConfiguration()
+        contentConfiguration.text = title
+        return contentConfiguration
+    }
+    
     private func section(for indexPath: IndexPath) -> Section {
         let sectionNumber = isEditing ? indexPath.section + 1 : indexPath.section
         guard let section = Section(rawValue: sectionNumber) else {
