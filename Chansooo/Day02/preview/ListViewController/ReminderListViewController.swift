@@ -11,6 +11,13 @@ class ReminderListViewController: UICollectionViewController {
 
     var dataSource : DataSource!
     var reminders: [Reminder] = Reminder.sampleData
+    var filteredReminders: [Reminder] {
+        return reminders.filter{ listStyle.shouldInclude(date: $0.dueDate)}.sorted { $0.dueDate < $1.dueDate}
+    }
+    var listStyle: ReminderListStyle = .today
+    var listStyleSegmentControl = UISegmentedControl(items: [
+        ReminderListStyle.today.name, ReminderListStyle.future.name, ReminderListStyle.all.name
+    ])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +31,21 @@ class ReminderListViewController: UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
         
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
+        addButton.accessibilityLabel = NSLocalizedString("Add reminder", comment: "Add button access label")
+        navigationItem.rightBarButtonItem = addButton
+        
+        listStyleSegmentControl.selectedSegmentIndex = listStyle.rawValue
+        listStyleSegmentControl.addTarget(self, action: #selector(didChangeListStyle(_:)), for: .valueChanged)
+        navigationItem.titleView = listStyleSegmentControl
+        
         updateSnapShot()
         
         collectionView.dataSource = dataSource
     }
     
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        let id = reminders[indexPath.item].id
+        let id = filteredReminders[indexPath.item].id
         showDetail(for: id)
         return false
     }
@@ -47,8 +62,20 @@ class ReminderListViewController: UICollectionViewController {
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listconfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
         listconfiguration.showsSeparators = false
+        listconfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeActions
         listconfiguration.backgroundColor = .clear
         return UICollectionViewCompositionalLayout.list(using: listconfiguration)
+    }
+    
+    private func makeSwipeActions(for indexPath: IndexPath?) -> UISwipeActionsConfiguration? {
+        guard let indexPath = indexPath, let id = dataSource.itemIdentifier(for: indexPath) else { return nil }
+        let deleteActiontitle = NSLocalizedString("Delete", comment: "Delete action title")
+        let deleteAction = UIContextualAction(style: .destructive, title: deleteActiontitle) { [weak self] _, _, completion in
+            self?.deleteReminder(with: id)
+            self?.updateSnapShot()
+            completion(false)
+        }
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
 }
 
