@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct Reminder: Identifiable {
+
+/// 미리 알림 데이터를 저장하기 위한 구조체
+/// id - 제목이나 완료 상태가 변경되더라도 데이터를 구별하기 위한 식별자
+/// title - 미리 알림의 타이틀
+/// dueDate - 미리 알림의 마감 날짜
+/// notes - 미리 알림 상세 설명
+/// isComplete - 미리 알림 완료 여부
+struct Reminder: Equatable, Identifiable {
     var id: String = UUID().uuidString
     var title: String
     var dueDate: Date
@@ -15,6 +22,7 @@ struct Reminder: Identifiable {
     var isComplete: Bool = false
 }
 
+// ID 값으로 Reminder 배열의 index를 찾기?
 extension Array where Element == Reminder {
     func indexOfReminder(with id: Reminder.ID) -> Self.Index {
         guard let index = firstIndex(where: { $0.id == id }) else {
@@ -24,8 +32,10 @@ extension Array where Element == Reminder {
     }
 }
 
+
 #if DEBUG
 extension Reminder {
+    // Chapter 6 이전까지 사용할 Test Data
     static var sampleData = [
         Reminder(title: "Submit reimbursement report", dueDate: Date().addingTimeInterval(800.0), notes: "Don't forget about taxi receipts"),
         Reminder(title: "Code review", dueDate: Date().addingTimeInterval(14000.0), notes: "Check tech specs in shared folder", isComplete: true),

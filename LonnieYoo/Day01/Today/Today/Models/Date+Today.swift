@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: iOS13에서도 동작하도록 수정 해보자!
 extension Date {
     var dayAndTimeText: String {
         let timeText = formatted(date: .omitted, time: .shortened)
