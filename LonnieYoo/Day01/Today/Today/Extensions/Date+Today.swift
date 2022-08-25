@@ -9,7 +9,6 @@ import Foundation
 
 // TODO: iOS13에서도 동작하도록 수정 해보자!
 extension Date {
-
     var dayAndTimeText: String {
         let timeText = convertTimeToString(with: "ah:m")
         if Locale.current.calendar.isDateInToday(self) {
@@ -31,7 +30,6 @@ extension Date {
     }
     
     func convertDateToString(with format: String) -> String {
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .full
         dateFormatter.setLocalizedDateFormatFromTemplate(format)
