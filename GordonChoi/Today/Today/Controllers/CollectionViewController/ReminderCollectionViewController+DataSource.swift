@@ -22,13 +22,16 @@ extension ReminderCollectionViewController {
         let ids = idsThatChanged.filter { id in
             filteredReminders.contains(where: { $0.id == id })
         }
+        
         var snapshot = Snapshot()
         snapshot.appendSections([0])
         snapshot.appendItems(filteredReminders.map { $0.id })
         if !ids.isEmpty {
             snapshot.reloadItems(ids)
         }
+        
         dataSource.apply(snapshot)
+        headerView?.progress = progress
     }
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Reminder.ID) {
