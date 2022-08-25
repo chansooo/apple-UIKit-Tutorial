@@ -95,4 +95,9 @@ extension ReminderCollectionViewController {
         let index = reminders.indexOfReminder(with: id)
         reminders[index] = reminder
     }
+    
+    func deleteReminder(with id: Reminder.ID) {
+        let index = reminders.indexOfReminder(with: id)
+        reminders.remove(at: index)
+    }
 }
