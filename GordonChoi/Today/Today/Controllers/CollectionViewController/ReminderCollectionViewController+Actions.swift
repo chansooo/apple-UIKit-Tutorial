@@ -40,5 +40,6 @@ extension ReminderCollectionViewController {
     @objc func didChangeListStyle(_ sender: UISegmentedControl) {
         listStyle = ReminderListStyle(rawValue: sender.selectedSegmentIndex) ?? .today
         updateSnapshot()
+        refreshBackground()
     }
 }
