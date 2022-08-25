@@ -96,6 +96,7 @@ extension ReminderCollectionViewController {
             do {
                 try await reminderStore.requestAccess()
                 reminders = try await reminderStore.readAll()
+                NotificationCenter.default.addObserver(self, selector: #selector(eventStoreChanged(_:)), name: .EKEventStoreChanged, object: nil)
             } catch TodayError.accessDenied, TodayError.accessRestricted {
                 #if DEBUG
                 reminders = Reminder.sampleData
@@ -104,6 +105,13 @@ extension ReminderCollectionViewController {
                 showError(error)
             }
             
+            updateSnapshot()
+        }
+    }
+    
+    func reminderStoreChanged() {
+        Task {
+            reminders = try await reminderStore.readAll()
             updateSnapshot()
         }
     }
