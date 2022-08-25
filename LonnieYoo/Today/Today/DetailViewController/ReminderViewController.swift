@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ReminderViewController: UICollectionViewController {
+final class ReminderViewController: UICollectionViewController {
     private typealias DataSource = UICollectionViewDiffableDataSource<Section, Row>
     private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Row>
     

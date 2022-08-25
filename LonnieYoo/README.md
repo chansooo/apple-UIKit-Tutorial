@@ -25,3 +25,7 @@
 ### Chapter 6 - System Frameworks
 * Loading Reminders ✅
 * Saving Reminders ✅
+
+## 22년 8월 25일
+* formatted()에서 DateFormatter로 변경 ✅
+* 상속이 필요없는 class final 붙이기 ✅

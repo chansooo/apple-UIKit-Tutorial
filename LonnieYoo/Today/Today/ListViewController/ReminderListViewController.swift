@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ReminderListViewController: UICollectionViewController {
+final class ReminderListViewController: UICollectionViewController {
     var dataSource: DataSource!
     var reminders: [Reminder] = []
     var filteredReminders: [Reminder] {
