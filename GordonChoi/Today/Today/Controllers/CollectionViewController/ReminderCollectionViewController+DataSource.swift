@@ -87,6 +87,10 @@ extension ReminderCollectionViewController {
         return reminders[index]
     }
     
+    func add(_ reminder: Reminder) {
+        reminders.append(reminder)
+    }
+    
     func update(_ reminder: Reminder, with id: Reminder.ID) {
         let index = reminders.indexOfReminder(with: id)
         reminders[index] = reminder
