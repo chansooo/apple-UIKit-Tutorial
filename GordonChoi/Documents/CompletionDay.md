@@ -4,3 +4,4 @@
 - supplementary view
 - supplementaryviewprovider
 - EventKit
+- nslocalizedstring
