@@ -8,11 +8,36 @@
 import UIKit
 
 final class ProgressHeaderView: UICollectionReusableView {
-    var progress: CGFloat = 0
+    var progress: CGFloat = 0 {
+        didSet {
+            heightConstraint?.constant = progress * bounds.height
+            UIView.animate(withDuration: 0.2) { [weak self] in
+                self?.layoutIfNeeded()
+            }
+        }
+    }
     
     private let upperView = UIView(frame: .zero)
     private let lowerView = UIView(frame: .zero)
     private let containerView = UIView(frame: .zero)
+    private var heightConstraint: NSLayoutConstraint?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        prepareSubviews()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        containerView.layer.masksToBounds = true
+        containerView.layer.cornerRadius = 0.5 * containerView.bounds.width
+    }
     
     private func prepareSubviews() {
         containerView.addSubview(upperView)
@@ -39,5 +64,13 @@ final class ProgressHeaderView: UICollectionReusableView {
         upperView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         lowerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         lowerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        
+        heightConstraint = lowerView.heightAnchor.constraint(equalToConstant: 0)
+        heightConstraint?.isActive = true
+        
+        backgroundColor = .clear
+        containerView.backgroundColor = .clear
+        upperView.backgroundColor = .todayProgressUpperBackground
+        lowerView.backgroundColor = .todayProgressLowerBackground
     }
 }
