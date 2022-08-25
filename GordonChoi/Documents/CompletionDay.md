@@ -5,3 +5,4 @@
 - supplementaryviewprovider
 - EventKit
 - nslocalizedstring
+- EKEventStore
