@@ -98,9 +98,9 @@ extension ReminderCollectionViewController {
                 reminders = try await reminderStore.readAll()
                 NotificationCenter.default.addObserver(self, selector: #selector(eventStoreChanged(_:)), name: .EKEventStoreChanged, object: nil)
             } catch TodayError.accessDenied, TodayError.accessRestricted {
-                #if DEBUG
+#if DEBUG
                 reminders = Reminder.sampleData
-                #endif
+#endif
             } catch {
                 showError(error)
             }
@@ -136,8 +136,15 @@ extension ReminderCollectionViewController {
     }
     
     func update(_ reminder: Reminder, with id: Reminder.ID) {
-        let index = reminders.indexOfReminder(with: id)
-        reminders[index] = reminder
+        do {
+            try reminderStore.save(reminder)
+            let index = reminders.indexOfReminder(with: id)
+            reminders[index] = reminder
+        } catch TodayError.accessDenied {
+            
+        } catch {
+            showError(error)
+        }
     }
     
     func deleteReminder(with id: Reminder.ID) {
