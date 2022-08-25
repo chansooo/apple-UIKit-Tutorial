@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "fcb6c8f642d9160f",
+        "id": "eef89d21ba6a9db5",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -128,10 +128,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fcb6c8f642d9160f",
+  "active": "eef89d21ba6a9db5",
   "lastOpenFiles": [
-    "Day01.md",
+    "Completion.md",
     "CompletionDay.md",
+    "Day01.md",
     "Day03.md",
     "Day02.md"
   ]
