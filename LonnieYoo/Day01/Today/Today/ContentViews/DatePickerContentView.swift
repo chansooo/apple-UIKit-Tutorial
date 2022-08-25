@@ -9,7 +9,7 @@ import UIKit
 
 class DatePickerContentView: UIView, UIContentView {
     struct Configuration: UIContentConfiguration {
-        var date = Date.now
+        var date = Date()
         var onChange: (Date) -> Void = { _ in }
         
         func makeContentView() -> UIView & UIContentView {

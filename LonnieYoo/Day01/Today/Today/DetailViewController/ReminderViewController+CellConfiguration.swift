@@ -56,7 +56,7 @@ extension ReminderViewController {
         case .viewNotes:
             return reminder.notes
         case .viewTime:
-            return reminder.dueDate.formatted(date: .omitted, time: .shortened)
+            return reminder.dueDate.convertTimeToString(with: "ah:m")
         case .viewTitle:
             return reminder.title
         default:

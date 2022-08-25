@@ -9,7 +9,7 @@ import UIKit
 
 extension UIColor {
     static var todayDetailCellTint: UIColor {
-        UIColor(named: "TodayDetailCellTint") ?? .tintColor
+        UIColor(named: "TodayDetailCellTint") ?? .clear
     }
     
     static var todayListCellBackground: UIColor {
@@ -17,7 +17,7 @@ extension UIColor {
     }
     
     static var todayListCellDoneButtonTint: UIColor {
-        UIColor(named: "TodayListCellDoneButtonTint") ?? .tintColor
+        UIColor(named: "TodayListCellDoneButtonTint") ?? .clear
     }
     
     static var todayGradientAllBegin: UIColor {
@@ -49,7 +49,7 @@ extension UIColor {
     }
     
     static var todayPrimaryTint: UIColor {
-        UIColor(named: "TodayPrimaryTint") ?? .tintColor
+        UIColor(named: "TodayPrimaryTint") ?? .clear
     }
     
     static var todayProgressLowerBackground: UIColor {
