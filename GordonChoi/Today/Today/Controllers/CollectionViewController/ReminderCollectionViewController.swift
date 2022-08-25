@@ -16,6 +16,8 @@ final class ReminderCollectionViewController: UICollectionViewController {
             .sorted { $0.dueDate < $1.dueDate }
     }
     
+    var headerView: ProgressHeaderView?
+    
     var listStyle: ReminderListStyle = .today
     let listStyleSegmentedControl = UISegmentedControl(items: [
         ReminderListStyle.today.name,
@@ -25,6 +27,8 @@ final class ReminderCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.backgroundColor = .todayGradientFutureBegin
         
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
@@ -42,6 +46,14 @@ final class ReminderCollectionViewController: UICollectionViewController {
                 for: indexPath,
                 item: itemIdentifier
             )
+        }
+        
+        let headerRegistration = UICollectionView.SupplementaryRegistration(
+            elementKind: ProgressHeaderView.elementKind,
+            handler: supplementaryRegistrationHandler
+        )
+        dataSource.supplementaryViewProvider = { supplementaryView, elementKind, indexPath in
+            return self.collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
         }
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
@@ -74,6 +86,7 @@ final class ReminderCollectionViewController: UICollectionViewController {
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
+        listConfiguration.headerMode = .supplementary
         listConfiguration.showsSeparators = false
         listConfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeActions
         listConfiguration.backgroundColor = .clear
@@ -94,5 +107,9 @@ final class ReminderCollectionViewController: UICollectionViewController {
         }
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
+    private func supplementaryRegistrationHandler(progressView: ProgressHeaderView, elementKind: String, indexPath: IndexPath) {
+        headerView = progressView
     }
 }
