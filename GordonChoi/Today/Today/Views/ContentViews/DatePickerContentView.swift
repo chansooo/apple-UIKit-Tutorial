@@ -10,6 +10,7 @@ import UIKit
 final class DatePickerContentView: UIView, UIContentView {
     struct Configuration: UIContentConfiguration {
         var date = Date.now
+        var onChange: (Date) -> Void = { _ in }
         
         func makeContentView() -> UIView & UIContentView {
             return DatePickerContentView(self)
@@ -30,6 +31,7 @@ final class DatePickerContentView: UIView, UIContentView {
         
         addPinnedSubview(datePicker)
         datePicker.preferredDatePickerStyle = .inline
+        datePicker.addTarget(self, action: #selector(didPick(_:)), for: .valueChanged)
     }
     
     required init?(coder: NSCoder) {
@@ -42,6 +44,14 @@ final class DatePickerContentView: UIView, UIContentView {
         }
         
         datePicker.date = configuration.date
+    }
+    
+    @objc private func didPick(_ sender: UIDatePicker) {
+        guard let configuration = configuration as? DatePickerContentView.Configuration else {
+            return
+        }
+        
+        configuration.onChange(sender.date)
     }
 }
 
