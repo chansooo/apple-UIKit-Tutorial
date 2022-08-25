@@ -16,6 +16,7 @@
 		4F65E93F28B808CF00487AE0 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65E93E28B808CF00487AE0 /* EKEventStore+AsyncFetch.swift */; };
 		4F65E94128B809CC00487AE0 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65E94028B809CC00487AE0 /* Reminder+EKReminder.swift */; };
 		4F65E94428B80AAC00487AE0 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65E94328B80AAC00487AE0 /* ReminderStore.swift */; };
+		4F65E94628B8122200487AE0 /* EKReminder+Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65E94528B8122200487AE0 /* EKReminder+Reminder.swift */; };
 		4F8DC9A928ADF58B00816315 /* ReminderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC9A828ADF58B00816315 /* ReminderViewController+Section.swift */; };
 		4F8DC9AB28AE044C00816315 /* ReminderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC9AA28AE044C00816315 /* ReminderViewController+CellConfiguration.swift */; };
 		4F8DC9AE28AE06FA00816315 /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DC9AD28AE06FA00816315 /* UIView+PinnedSubview.swift */; };
@@ -47,6 +48,7 @@
 		4F65E93E28B808CF00487AE0 /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
 		4F65E94028B809CC00487AE0 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 		4F65E94328B80AAC00487AE0 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		4F65E94528B8122200487AE0 /* EKReminder+Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKReminder+Reminder.swift"; sourceTree = "<group>"; };
 		4F8DC9A828ADF58B00816315 /* ReminderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Section.swift"; sourceTree = "<group>"; };
 		4F8DC9AA28AE044C00816315 /* ReminderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
 		4F8DC9AD28AE06FA00816315 /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				4FBE636128ABCCEB00897C74 /* UIColor+Today.swift */,
 				4F65E93A28B8065300487AE0 /* CAGradientLayer+ListStyle.swift */,
 				4F65E93E28B808CF00487AE0 /* EKEventStore+AsyncFetch.swift */,
+				4F65E94528B8122200487AE0 /* EKReminder+Reminder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				4F65E93B28B8065300487AE0 /* CAGradientLayer+ListStyle.swift in Sources */,
 				4F9CC9C328AB7E4000DBF003 /* Reminder.swift in Sources */,
 				4F65E94428B80AAC00487AE0 /* ReminderStore.swift in Sources */,
+				4F65E94628B8122200487AE0 /* EKReminder+Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
