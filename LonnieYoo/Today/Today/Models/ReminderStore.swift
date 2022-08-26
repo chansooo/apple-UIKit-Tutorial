@@ -8,7 +8,7 @@
 import Foundation
 import EventKit
 
-class ReminderStore {
+final class ReminderStore {
     static let shared = ReminderStore()
     
     private let ekStore = EKEventStore()

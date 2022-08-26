@@ -118,6 +118,18 @@
 			path = ContentViews;
 			sourceTree = "<group>";
 		};
+		F069C02328B79D380013D290 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F024C3C328AE7BFC0098B9FF /* EKRReminder+Reminder.swift */,
+				F024C3BD28AE71EE0098B9FF /* EKEventStore+AsyncFetch.swift */,
+				F024C3B928AE6EBC0098B9FF /* CAGradientLayer+ListStyle.swift */,
+				F024C39B28ABE37E0098B9FF /* UIColor+Today.swift */,
+				F024C39628ABD55F0098B9FF /* Date+Today.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F06A4B0728ABB69600D42BDE = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 				F024C3AA28AD202D0098B9FF /* ContentViews */,
 				F024C3A328ABF00B0098B9FF /* DetailViewController */,
 				F024C39828ABD70D0098B9FF /* ListViewController */,
+				F069C02328B79D380013D290 /* Extensions */,
 				F06A4B2928ABBD5200D42BDE /* Models */,
 				F06A4B1328ABB69600D42BDE /* AppDelegate.swift */,
 				F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */,
@@ -155,15 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				F06A4B2A28ABBD6B00D42BDE /* Reminder.swift */,
-				F024C39628ABD55F0098B9FF /* Date+Today.swift */,
-				F024C39B28ABE37E0098B9FF /* UIColor+Today.swift */,
-				F024C3B528AD4DE30098B9FF /* ReminderListStyle.swift */,
-				F024C3B928AE6EBC0098B9FF /* CAGradientLayer+ListStyle.swift */,
-				F024C3BB28AE71A00098B9FF /* TodayError.swift */,
-				F024C3BD28AE71EE0098B9FF /* EKEventStore+AsyncFetch.swift */,
 				F024C3BF28AE76590098B9FF /* Reminder+EKReminder.swift */,
 				F024C3C128AE76DD0098B9FF /* ReminderStore.swift */,
-				F024C3C328AE7BFC0098B9FF /* EKRReminder+Reminder.swift */,
+				F024C3B528AD4DE30098B9FF /* ReminderListStyle.swift */,
+				F024C3BB28AE71A00098B9FF /* TodayError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -340,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -394,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -19,7 +19,7 @@ extension ReminderListViewController {
     }
     
     @objc func didPressAddButton(_ sender: UIBarButtonItem) {
-        let reminder = Reminder(title: "", dueDate: Date.now)
+        let reminder = Reminder(title: "", dueDate: Date())
         let viewController = ReminderViewController(reminder: reminder) { [weak self] reminder in
             self?.add(reminder)
             self?.updateSnapshot()

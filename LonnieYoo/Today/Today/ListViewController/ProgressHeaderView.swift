@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProgressHeaderView: UICollectionReusableView {
+final class ProgressHeaderView: UICollectionReusableView {
     static var elementKind: String { UICollectionView.elementKindSectionHeader }
     
     var progress: CGFloat = 0 {
