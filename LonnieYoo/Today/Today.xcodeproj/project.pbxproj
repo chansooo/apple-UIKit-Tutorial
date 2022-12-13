@@ -29,6 +29,10 @@
 		F024C3C028AE76590098B9FF /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C3BF28AE76590098B9FF /* Reminder+EKReminder.swift */; };
 		F024C3C228AE76DD0098B9FF /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C3C128AE76DD0098B9FF /* ReminderStore.swift */; };
 		F024C3C428AE7BFC0098B9FF /* EKRReminder+Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F024C3C328AE7BFC0098B9FF /* EKRReminder+Reminder.swift */; };
+		F059946B28BF39A4003ABB9D /* YBJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059946A28BF39A4003ABB9D /* YBJViewController.swift */; };
+		F059946D28BF39C9003ABB9D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059946C28BF39C9003ABB9D /* TestViewController.swift */; };
+		F059947028BF3A3A003ABB9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059946E28BF3A3A003ABB9D /* ViewController.swift */; };
+		F059947128BF3A3A003ABB9D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F059946F28BF3A3A003ABB9D /* ViewController.xib */; };
 		F06A4B1428ABB69600D42BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A4B1328ABB69600D42BDE /* AppDelegate.swift */; };
 		F06A4B1628ABB69600D42BDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */; };
 		F06A4B1B28ABB69600D42BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06A4B1928ABB69600D42BDE /* Main.storyboard */; };
@@ -61,6 +65,10 @@
 		F024C3BF28AE76590098B9FF /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 		F024C3C128AE76DD0098B9FF /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
 		F024C3C328AE7BFC0098B9FF /* EKRReminder+Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKRReminder+Reminder.swift"; sourceTree = "<group>"; };
+		F059946A28BF39A4003ABB9D /* YBJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBJViewController.swift; sourceTree = "<group>"; };
+		F059946C28BF39C9003ABB9D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		F059946E28BF3A3A003ABB9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F059946F28BF3A3A003ABB9D /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		F06A4B1028ABB69600D42BDE /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06A4B1328ABB69600D42BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +164,11 @@
 				F06A4B2928ABBD5200D42BDE /* Models */,
 				F06A4B1328ABB69600D42BDE /* AppDelegate.swift */,
 				F06A4B1528ABB69600D42BDE /* SceneDelegate.swift */,
+				F059946A28BF39A4003ABB9D /* YBJViewController.swift */,
+				F059946C28BF39C9003ABB9D /* TestViewController.swift */,
 				F06A4B1928ABB69600D42BDE /* Main.storyboard */,
+				F059946E28BF3A3A003ABB9D /* ViewController.swift */,
+				F059946F28BF3A3A003ABB9D /* ViewController.xib */,
 				F06A4B1C28ABB69A00D42BDE /* Assets.xcassets */,
 				F06A4B1E28ABB69A00D42BDE /* LaunchScreen.storyboard */,
 				F06A4B2128ABB69A00D42BDE /* Info.plist */,
@@ -236,6 +248,7 @@
 			files = (
 				F06A4B2028ABB69A00D42BDE /* LaunchScreen.storyboard in Resources */,
 				F06A4B1D28ABB69A00D42BDE /* Assets.xcassets in Resources */,
+				F059947128BF3A3A003ABB9D /* ViewController.xib in Resources */,
 				F06A4B1B28ABB69600D42BDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +274,13 @@
 				F024C39728ABD55F0098B9FF /* Date+Today.swift in Sources */,
 				F024C3AE28AD21090098B9FF /* TextFieldContentView.swift in Sources */,
 				F024C3B228AD2EF00098B9FF /* TextViewContentView.swift in Sources */,
+				F059946D28BF39C9003ABB9D /* TestViewController.swift in Sources */,
 				F024C3C428AE7BFC0098B9FF /* EKRReminder+Reminder.swift in Sources */,
 				F024C3A528ABF0490098B9FF /* ReminderViewController+Row.swift in Sources */,
+				F059946B28BF39A4003ABB9D /* YBJViewController.swift in Sources */,
 				F024C39E28ABE9670098B9FF /* ReminderDoneButton.swift in Sources */,
 				F06A4B1428ABB69600D42BDE /* AppDelegate.swift in Sources */,
+				F059947028BF3A3A003ABB9D /* ViewController.swift in Sources */,
 				F024C3A928AD1E520098B9FF /* ReminderViewController+CellConfiguration.swift in Sources */,
 				F06A4B1628ABB69600D42BDE /* SceneDelegate.swift in Sources */,
 				F024C3C028AE76590098B9FF /* Reminder+EKReminder.swift in Sources */,
