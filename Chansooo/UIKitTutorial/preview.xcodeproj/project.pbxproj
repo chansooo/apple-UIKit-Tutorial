@@ -37,6 +37,7 @@
 		5670581228AD2FF50059C4E0 /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670581128AD2FF50059C4E0 /* ReminderListViewController+Actions.swift */; };
 		5670581428AD3E150059C4E0 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670581328AD3E150059C4E0 /* ReminderViewController.swift */; };
 		5670581728AD408E0059C4E0 /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670581628AD408E0059C4E0 /* ReminderViewController+Row.swift */; };
+		F06131EE2948B25C007B3D1E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06131ED2948B25C007B3D1E /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		5670581128AD2FF50059C4E0 /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
 		5670581328AD3E150059C4E0 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		5670581628AD408E0059C4E0 /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
+		F06131ED2948B25C007B3D1E /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +118,12 @@
 		567057EE28AB64B10059C4E0 /* preview */ = {
 			isa = PBXGroup;
 			children = (
+				F06131F12948B2B7007B3D1E /* newTest */,
 				565AFC9728AE106500731A0E /* ContentViews */,
 				5670580528AB84490059C4E0 /* Models */,
 				567057EF28AB64B10059C4E0 /* AppDelegate.swift */,
 				567057F128AB64B10059C4E0 /* SceneDelegate.swift */,
-				5670580A28AD0F490059C4E0 /* ListViewController */,
+				5670580A28AD0F490059C4E0 /* ReminderList */,
 				567057F528AB64B10059C4E0 /* Main.storyboard */,
 				567057F828AB64B20059C4E0 /* Assets.xcassets */,
 				567057FA28AB64B20059C4E0 /* LaunchScreen.storyboard */,
@@ -148,16 +151,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5670580A28AD0F490059C4E0 /* ListViewController */ = {
+		5670580A28AD0F490059C4E0 /* ReminderList */ = {
 			isa = PBXGroup;
 			children = (
-				567057F328AB64B10059C4E0 /* ReminderListViewController.swift */,
-				5670580B28AD0F6B0059C4E0 /* ReminderListViewController+DataSource.swift */,
-				5670580F28AD2F590059C4E0 /* ReminderDoneButton.swift */,
+				F06131EF2948B298007B3D1E /* TestTest */,
 				5670581128AD2FF50059C4E0 /* ReminderListViewController+Actions.swift */,
 				565AFCA428AE66D000731A0E /* ProgressHeaderView.swift */,
+				F06131ED2948B25C007B3D1E /* test.swift */,
 			);
-			path = ListViewController;
+			path = ReminderList;
 			sourceTree = "<group>";
 		};
 		5670581528AD3E190059C4E0 /* DetailViewController */ = {
@@ -169,6 +171,23 @@
 				565AFC9528AE0E2300731A0E /* ReminderViewController+CellConfiguration.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		F06131EF2948B298007B3D1E /* TestTest */ = {
+			isa = PBXGroup;
+			children = (
+				567057F328AB64B10059C4E0 /* ReminderListViewController.swift */,
+			);
+			path = TestTest;
+			sourceTree = "<group>";
+		};
+		F06131F12948B2B7007B3D1E /* newTest */ = {
+			isa = PBXGroup;
+			children = (
+				5670580B28AD0F6B0059C4E0 /* ReminderListViewController+DataSource.swift */,
+				5670580F28AD2F590059C4E0 /* ReminderDoneButton.swift */,
+			);
+			path = newTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +274,7 @@
 				565AFC9D28AE19CB00731A0E /* UIContentConfiguration+Stateless.swift in Sources */,
 				567057F428AB64B10059C4E0 /* ReminderListViewController.swift in Sources */,
 				5670580928AD06680059C4E0 /* Date+Today.swift in Sources */,
+				F06131EE2948B25C007B3D1E /* test.swift in Sources */,
 				565AFCB328B4F3DD00731A0E /* EKReminder+Reminders.swift in Sources */,
 				565AFC9B28AE17F400731A0E /* TextFieldContentView.swift in Sources */,
 				565AFC9F28AE1EEE00731A0E /* TextViewContentView.swift in Sources */,
