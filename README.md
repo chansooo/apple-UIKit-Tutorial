@@ -1,7 +1,6 @@
 # 내용
 
-1. apple UIKit Tutorial: https://developer.apple.com/tutorials/app-dev-training
-2. 부스트코스 iOS 앱 프로그래밍 과제: https://www.boostcourse.org/mo326/joinLectures/12966?null
+apple UIKit Tutorial: https://developer.apple.com/tutorials/app-dev-training
 
 # 사용 방법
 
