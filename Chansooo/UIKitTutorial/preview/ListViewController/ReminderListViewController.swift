@@ -82,6 +82,7 @@ class ReminderListViewController: UICollectionViewController {
         let backgroundView = UIView()
         let gradientLayer = CAGradientLayer.gradientLayer(for: listStyle, in: collectionView.frame)
         backgroundView.layer.addSublayer(gradientLayer)
+        //안늉하세요?
         collectionView.backgroundView = backgroundView
     }
     
