@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "fcb6c8f642d9160f",
+        "id": "eef89d21ba6a9db5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Day03.md",
+            "file": "CompletionDay.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day03.md",
+                "file": "CompletionDay.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day03.md",
+                "file": "CompletionDay.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day03.md"
+                "file": "CompletionDay.md"
               }
             }
           }
@@ -128,8 +128,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fcb6c8f642d9160f",
+  "active": "eef89d21ba6a9db5",
   "lastOpenFiles": [
+    "Completion.md",
+    "CompletionDay.md",
     "Day01.md",
     "Day03.md",
     "Day02.md"
